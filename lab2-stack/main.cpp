@@ -40,6 +40,16 @@ int main()
      s->top(value);
 
 
+<<<<<<< HEAD
      
 
 }
+=======
+     s->push(12);
+     s->push(13);
+     s->push(14);
+     s->push(15);
+     cout<<"The elements in the stack are"<<endl;
+     s->traverse();
+}
+>>>>>>> 6b27a6703a9b4f934c5929452c75048fd012fe23

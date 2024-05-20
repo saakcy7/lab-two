@@ -2,7 +2,7 @@
 #define Arraystack_h
 #include "linkedlist.h"
 #include "stack.h"
-#define MAX_SIZE 15
+#define MAX_SIZE 5
 class Arraystack : public stack
 {
 public:
@@ -13,6 +13,7 @@ public:
   bool top(int &data);
   bool isEmpty();
   bool isFull();
+  void traverse();
 
 private:
   int arr[MAX_SIZE];

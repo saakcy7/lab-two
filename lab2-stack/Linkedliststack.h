@@ -6,7 +6,7 @@
 class Linkedliststack : public stack
 {
 public:
-    Linkedliststack() : top_index(1){};
+    Linkedliststack() : top_index(-1){};
     ~Linkedliststack();
     void push(int data);
     bool pop(int &value);

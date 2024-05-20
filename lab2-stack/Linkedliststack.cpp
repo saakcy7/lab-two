@@ -1,7 +1,8 @@
 #include <iostream>
-#define MAX_SIZE 15
+#define MAX_SIZE 5
 #include "Linkedliststack.h"
 #include "stack.h"
+#include "linkedlist.h"
 using namespace std;
 
 bool Linkedliststack::isEmpty()
@@ -48,6 +49,7 @@ bool Linkedliststack::pop(int &value)
         value = this->list.head->info;
 
         list.removeFromHead();
+        cout<<"The popped data is"<<value<<endl;
         return true;
     }
     else
@@ -62,6 +64,7 @@ bool Linkedliststack::top(int &value)
     if (!list.isEmpty())
     {
         value = this->list.head->info;
+         cout<<"The popped data is"<<value<<endl;
         return true;
     }
     else

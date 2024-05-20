@@ -1,8 +1,8 @@
 
 #include <iostream>
 #include "Arraystack.h"
-
-#define MAX_SIZE 15;
+#include "linkedlist.h"
+#define MAX_SIZE 5
 using namespace std;
 
 Arraystack::Arraystack()
@@ -53,6 +53,7 @@ bool Arraystack::top(int &data)
     if (!this->isEmpty())
     {
         data = arr[top_index];
+        cout<<"The top element is"<<data<<endl;
         return true;
     }
     else
@@ -66,13 +67,21 @@ bool Arraystack::pop(int &data)
 {
     if (!this->isEmpty())
     {
-        top_index--;
         data = arr[top_index];
+        top_index--;
+        cout<<"popped element is"<<data<<endl;
         return true;
     }
     else
     {
         cout << "The stack is empty" << endl;
         return false;
+    }
+}
+
+void Arraystack::traverse() {
+    for(int i=0;i<MAX_SIZE;i++)
+    {
+        cout<<arr[i]<<endl;
     }
 }

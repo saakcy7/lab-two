@@ -10,8 +10,7 @@ int main()
 
      cout << "Stack Implementation" << endl;
      cout << "--------------------------------------" << endl;
-
-     // creating a stack that can hold float values.
+     
      stack *s = new Linkedliststack();
      int value;
      // checking if the stack is empty
